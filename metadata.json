@@ -1,0 +1,6 @@
+{
+  "name": "Pasapalabra Español - Հայերեն",
+  "description": "Интерактивная игра El Rosco (Pasapalabra) по испанским прошедшим временам с переводом на армянский язык.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

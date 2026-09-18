@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Montserrat', 'Noto Sans Armenian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #030d22;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom glow and animations for Pasapalabra */
+@keyframes roscoPulse {
+  0%, 100% {
+    transform: scale(1.08);
+    box-shadow: 0 0 16px 4px rgba(234, 179, 8, 0.7), inset 0 0 6px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 24px 7px rgba(250, 204, 21, 0.9), inset 0 0 8px rgba(255, 255, 255, 0.85);
+  }
+}
+
+.rosco-active-orb {
+  animation: roscoPulse 1.8s infinite ease-in-out;
+}
+
+@keyframes studioAmbient {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.studio-ambient {
+  animation: studioAmbient 6s infinite ease-in-out;
+}
+
